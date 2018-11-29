@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int veta[10],i,maior=0,maior2=0;
+    int vetb[15];
+    for(i=0;i<10;i++)
+    {
+     printf("\nentre com o elemento %d do vetor A\n",i+1);
+     scanf("%d",&veta[i]);
+     if(veta[i]>maior)
+     {maior=veta[i];
+                      
+     }}                
+     for(i=0;i<15;i++){
+     printf("\nentre com o elemento %d do vetor B\n",i+1);
+     scanf("%d",&vetb[i]);
+     if(vetb[i]>maior2)
+     {maior2=vetb[i];
+                       
+     }}
+     if(maior==maior2){
+     printf("o maior elemento eh o %d",maior);
+     }
+     else{
+     printf("\nnao existe elemento em comum\n");                      
+}
+    
+    
+    system("pause");
+    return 0;
+}
