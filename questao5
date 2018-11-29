@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    int predio,i,entraram,sairam,elevador=0,excesso;
+    
+    printf("\nquantos andares tem o predio?\n");
+    scanf("%d",&predio);
+    for(i=0;i<predio;i++)
+    {printf("\nquantas pessoas entraram no andar %d?\n",i+1);
+     scanf("%d",&entraram);
+     elevador=elevador+entraram;
+     if(elevador>15)
+     {printf("\nEXCESSO DE PASSAGEIROS. DEVEM SAIR\n");
+      printf("\nexistem %d pessoas, deseja remover quantas?\n",elevador);
+      scanf("%d",&excesso);
+      elevador=elevador-excesso;
+     }
+     printf("\nquantas pessoas sairam no andar %d?\n",i+1);
+     scanf("%d",&sairam);
+     elevador=elevador-sairam;
+         
+}
+    printf("\nirao sair %d pessoas\n",elevador);
+    
+    
+    
+    system("pause");
+    return 0;
+}    
