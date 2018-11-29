@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+    int i,idade[55],idade2=0,mediaI,mediaA;
+    float peso[55],altura[55],pac;
+    for(i=0;i<55;i++)
+    {
+     printf("Digite a idade do jogador %d:",i+1);
+     scanf("%d",&idade[i]);
+     printf("Digite o peso do jogador %d:",i+1);
+     scanf("%f",&peso[i]);
+     printf("Digite a altura do jogador %d:",i+1);
+     scanf("%f",&altura[i]);
+     }
+     for(i=0;i<55;i++)
+     {
+      if(idade[i]<18)
+      idade2=idade2+1;}
+      printf("Numero de jogadores menores que 18 anos: %d",idade2);
+      for(i=0;i<55;i++){
+      mediaI=mediaI+idade[i];
+      }
+      printf("media de idade: %d\n",mediaI/2);
+      for(i=0;i<55;i++){
+      mediaA=mediaA+altura[i];
+      }
+      printf("media de altura: %d\n",mediaA/2);
+      for(i=0;i<55;i++){
+       if(peso[i]>80){
+       pac=pac+1;
+       }
+       }
+                                                                          
+                                                   
+   
+    
+        
+    
+    
+    
+    
+    system("pause");
+    return 0;
+}
